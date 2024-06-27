@@ -11,6 +11,8 @@ import './charts/ChartjsConfig';
 
 // Import pages
 import Dashboard from './pages/Dashboard';
+import { Signin } from './pages/signin';
+
 
 function App() {
 
@@ -26,6 +28,7 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Dashboard />} />
+        <Route exact path="/signin" element={<Signin />} />
       </Routes>
     </>
   );
